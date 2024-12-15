@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link rel="stylesheet" href="CSS/donation.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+          <a href="index.html">
+            <img src="Images/logo.png" alt="Kenya ni yetu pia" class="logo">
+          </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="donation-section">
+        <h2>Support Kenya ni yetu pia</h2>
+        <p class="donation-description">Your generous donation helps us reach more people and empower Kenyan citizens.</p>
+        
+        <form class="donation-form" id="donation-form">
+            <label for="amount">Enter donation amount (KSh):</label>
+            <input type="number" id="amount" name="amount" placeholder="Amount in KSh" required>
+
+            <label for="payment-method">Select Payment Method:</label>
+            <select id="payment-method" name="payment-method" required onchange="showPaymentFields()">
+                <option value="">Select Payment Method</option>
+                <option value="mpesa">M-Pesa</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank">Bank Transfer</option>
+            </select>
+
+            <!-- M-Pesa Fields -->
+            <div id="mpesa-fields" class="payment-details" style="display: none;">
+                <label for="mpesa-phone">M-Pesa Phone Number:</label>
+                <input type="tel" id="mpesa-phone" name="mpesa-phone" placeholder="Your M-Pesa phone number" required>
+                
+                <label for="mpesa-name">M-Pesa Name:</label>
+                <input type="text" id="mpesa-name" name="mpesa-name" placeholder="Your M-Pesa Name" required>
+            </div>
+
+            <!-- PayPal Fields -->
+            <div id="paypal-fields" class="payment-details" style="display: none;">
+                <label for="paypal-email">PayPal Email Address:</label>
+                <input type="email" id="paypal-email" name="paypal-email" placeholder="Your PayPal Email" required>
+            </div>
+
+            <!-- Bank Transfer Fields -->
+            <div id="bank-fields" class="payment-details" style="display: none;">
+                <label for="bank-name">Bank Name:</label>
+                <select id="bank-name" name="bank-name" required>
+                    <option value="">Select Bank</option>
+                    <option value="kcb">KCB</option>
+                    <option value="equity">Equity</option>
+                    <option value="family">Family Bank</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="Card Number" required>
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="month" id="expiry-date" name="expiry-date" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+            </div>
+
+            <button type="submit" class="donate-btn" id="donate-button">Donate</button>
+        </form>
+        
+        <div class="donation-info">
+            <p>If you'd like to make a larger donation, please contact us directly.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kenya ni yetu pia. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

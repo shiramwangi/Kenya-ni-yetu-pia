@@ -1,0 +1,51 @@
+/* Constitution page styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #333;
+}
+
+.constitution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.constitution-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.constitution-card h2 {
+    color: #00A651;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.constitution-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.cta:hover {
+    background-color: white;
+    color: #FF0000;
+    transform: scale(1.1);
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Community</title>
+    <link rel="stylesheet" href="CSS/join.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="Images/logo.png" alt="Kenya ni yetu pia" class="logo">
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="join-section">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Join the Community</h1>
+                <p>Become a part of a movement to empower and engage with fellow Kenyans. Together, we make change.</p>
+                <a href="#join-form" class="cta join-btn">Join Now</a>
+            </div>
+        </section>
+
+        <!-- Join Form Section -->
+        <section id="join-form" class="form-section">
+            <h2>Fill out the form to become a member</h2>
+            <form action="join-us" method="POST" class="join-form" id="join-form">
+                <label for="name" class="floating-label">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="email" class="floating-label">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone" class="floating-label">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="location" class="floating-label">Location</label>
+                <input type="text" id="location" name="location" placeholder="Where are you from?" required>
+
+                <button type="submit" class="cta submit-btn">Submit</button>
+            </form>
+        </section>
+
+        <!-- Thank You Section (appears after form submission) -->
+        <section class="thank-you-section" id="thank-you" style="display: none;">
+            <h2>Thank You for Joining Us!</h2>
+            <p>Your membership is confirmed. You’ll hear from us soon. Together, we can make a difference!</p>
+            <a href="index.html" class="cta return-btn">Return to Home</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kenya ni yetu pia. All rights reserved.</p>
+    </footer>
+
+    <script src="js/join.js"></script>
+</body>
+
+</html>

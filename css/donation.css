@@ -1,0 +1,196 @@
+/* Global Styles specific to donation page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 16px; /* Set default font size */
+}
+
+header {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.logo-container {
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.donation-section {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.donation-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.donation-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.donation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.donation-form label {
+    font-size: 1rem;
+    color: #333;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.donation-form input,
+.donation-form select {
+    width: 90%; /* Increased width of form elements */
+    max-width: 400px; /* Limit maximum width */
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensure padding doesn't break layout */
+}
+
+.donation-form input:focus,
+.donation-form select:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+.payment-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* New Button Style */
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    background-color: var(--clr);
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 90%; /* Make button width consistent with inputs */
+    max-width: 400px;
+}
+
+/* Hover effect for the button */
+.button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Slight scale increase on hover for added visual effect */
+}
+
+/* Styling for the button content */
+.button__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__icon svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.button__text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.button-decor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #00ad54;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+/* Hover effect for the decorative circle */
+.button:hover .button-decor {
+    transform: translate(-50%, -50%) scale(0); /* Animate circle shrink on hover */
+}
+
+.donation-info {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+.donate-btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for animation */
+    margin-top: 20px;
+    width: 90%; /* Make button width consistent with inputs */
+    max-width: 400px;
+}
+
+.donate-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover for interactive effect */
+}
+
+.donate-btn:active {
+    transform: scale(0.98); /* Slightly shrink on click for feedback */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
