@@ -24,4 +24,14 @@ Welcome to the **KENYANIYETUPIA**, a platform dedicated to uplifting individuals
 ## Getting Started:
 1. Clone the repository: 
    ```bash
-   git clone https://github.com/your-username/community-website.git
+   git clone https://github.com/your-username/Kenyaniyetupia.git
+2. Navigate to the project folder
+   ```bash
+   cd Kenyaniyetupia
+3. Install dependencies
+   ```bash
+   npm install
+4. Run the development server
+   ```bash
+   npm start
+
